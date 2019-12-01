@@ -4,14 +4,16 @@
 <head>
   <title>Script delay</title>
   <meta charset="UTF-8" />
+  <script>this.customElements || document.write('<script src="//unpkg.com/document-register-element"><\x2fscript>');</script>
 </head>
-
-<script src="script-delay.js"></script>
 
 <body>
   <div id="app">
     <h1>Script delay</h1>
+    <p>Uses requestIdleCallback and timeout</p>
   </div>
+
+  <script src="script-delay.js" defer></script>
 
   <script-idle-delay>
     <script data-src="https://unpkg.com/react@16/umd/react.development.js" defer></script>
